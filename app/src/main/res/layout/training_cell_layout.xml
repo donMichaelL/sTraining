@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:weightSum="1.0" >
+
+    <TableRow>
+        <TextView
+            android:id="@+id/training_number"
+            android:textSize="20sp"
+            android:layout_weight="1.0"
+            android:layout_span="2"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="8dp">
+        <TextView
+            android:textSize="10sp"
+            android:id="@+id/txt_desciption"
+            android:layout_weight="1.0"
+            android:layout_span="2"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="8dp">
+        <TextView
+            android:text="Total KM"
+            android:textSize="10sp"
+            android:layout_weight="0.5"/>
+        <TextView
+            android:id="@+id/total_km"
+            android:textSize="10sp"
+            android:layout_weight="0.5"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="Total Time(Min)"
+            android:textSize="10sp"
+            android:layout_weight="0.5"/>
+        <TextView
+            android:id="@+id/total_time"
+            android:textSize="10sp"
+            android:layout_weight="0.5"/>
+    </TableRow>
+
+</TableLayout>

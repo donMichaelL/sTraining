@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">sTraining</string>
+    <string name="action_settings">Settings</string>
+    <string name="no_training">No Trainings</string>
+    <string-array name="months">
+        <item>Month</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+        <item>Total of Year</item>
+    </string-array>
+    <string-array name="weeks">
+        <item>Week</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>All</item>
+    </string-array>
+    <string-array name="years">
+        <item>Year</item>
+        <item>2014</item>
+        <item>2015</item>
+    </string-array>
+    <string-array name="days">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    <string name="title_activity_detail">DetailActivity</string>
+</resources>
