@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/darker_gray"
-    android:weightSum="1.0" >
-
-    <TableRow>
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
         <TextView
             android:id="@+id/training_number"
-            android:textSize="20sp"
-            android:layout_weight="1.0"
-            android:layout_span="2"/>
-    </TableRow>
-
-    <TableRow
-        android:layout_marginTop="8dp">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#DCE775"/>
         <TextView
-            android:textSize="10sp"
             android:id="@+id/txt_desciption"
-            android:layout_weight="1.0"
-            android:layout_span="2"/>
-    </TableRow>
-
-    <TableRow
-        android:layout_marginTop="8dp">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:layout_below="@id/training_number"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textColor="#DCE775"/>
         <TextView
-            android:text="Total KM"
-            android:textSize="10sp"
-            android:layout_weight="0.5"/>
+            android:id="@+id/txtView_total_km"
+            android:text="Total Km: "
+            style="@style/SummaryAttributes"
+            android:layout_below="@id/txt_desciption"
+            android:fontFamily="sans-serif-light"/>
         <TextView
             android:id="@+id/total_km"
-            android:textSize="10sp"
-            android:layout_weight="0.5"/>
-    </TableRow>
-
-    <TableRow>
+            style="@style/SummaryAttributes"
+            android:layout_toRightOf="@id/txtView_total_km"
+            android:layout_below="@id/txt_desciption"
+            android:fontFamily="sans-serif-light" />
         <TextView
-            android:text="Total Time(Min)"
-            android:textSize="10sp"
-            android:layout_weight="0.5"/>
+            android:id="@+id/txtView_total_time"
+            style="@style/SummaryAttributes"
+            android:text="Total Time (min): "
+            android:fontFamily="sans-serif-light"
+            android:layout_below="@id/txtView_total_km" />
         <TextView
             android:id="@+id/total_time"
-            android:textSize="10sp"
-            android:layout_weight="0.5"/>
-    </TableRow>
-
-</TableLayout>
+            style="@style/SummaryAttributes"
+            android:layout_toRightOf="@id/txtView_total_time"
+            android:layout_below="@id/txtView_total_km"
+            android:fontFamily="sans-serif-light" />
+</RelativeLayout>

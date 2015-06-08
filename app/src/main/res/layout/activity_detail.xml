@@ -1,159 +1,163 @@
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:background="@android:color/holo_blue_light"
-    tools:context="com.example.michalis.straining.DetailActivity"
-    android:weightSum="1.0">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="#42A5F5"
+    tools:context="com.example.michalis.straining.DetailActivity">
 
-    <TableRow>
         <TextView
             android:id="@+id/training_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center"
-            android:textSize="30sp"
-            android:layout_weight="1.0"
-            android:layout_span="2"/>
-    </TableRow>
+            android:textSize="34sp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#DCE775"
+            android:text="MONDAY 1/2/2331"
+            android:layout_weight="1"/>
 
-    <TableRow
-        android:layout_marginTop="15dp">
         <TextView
-            android:textSize="20sp"
-            android:gravity="center"
             android:id="@+id/txt_desciption"
-            android:layout_weight="1.0"
-            android:layout_span="2"/>
-    </TableRow>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#DCE775"
+            android:text="10xGx"
+            android:layout_weight="1"/>
 
-
-    <TableRow
-        android:layout_marginTop="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:paddingTop="8dp">
         <TextView
             android:text="Total KM"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_weight="0.5"/>
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
+            android:layout_weight="1"/>
         <TextView
             android:id="@+id/total_km"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_weight="0.5"/>
-    </TableRow>
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
+            android:layout_weight="1" />
+    </LinearLayout>
 
-    <TableRow
-        android:layout_marginTop="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
         <TextView
             android:text="Total Time(Min)"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_weight="0.5"/>
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
+            android:layout_weight="1"/>
         <TextView
             android:id="@+id/total_time"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_weight="0.5"/>
-    </TableRow>
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
+            android:layout_weight="1"/>
+        </LinearLayout>
 
-    <TableRow
-        android:layout_marginTop="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
         <TextView
             android:text="T1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
             android:layout_weight="0.25"/>
         <TextView
             android:id="@+id/txt_t1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
             android:layout_weight="0.25"/>
         <TextView
             android:text="T2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
             android:layout_weight="0.25"/>
         <TextView
             android:id="@+id/txt_t2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
             android:layout_weight="0.25"/>
-    </TableRow>
+    </LinearLayout>
 
-    <TableRow>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
         <TextView
             android:text="T3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
             android:layout_weight="0.25"/>
         <TextView
             android:id="@+id/txt_t3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
             android:layout_weight="0.25"/>
         <TextView
             android:text="T1_3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
             android:layout_weight="0.25"/>
         <TextView
             android:id="@+id/txt_t1_3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
             android:layout_weight="0.25"/>
-    </TableRow>
+        </LinearLayout>
 
-    <TableRow>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
         <TextView
             android:text="T2_3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
             android:layout_weight="0.25"/>
         <TextView
             android:id="@+id/txt_t2_3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
             android:layout_weight="0.25"/>
         <TextView
             android:text="TA"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
             android:layout_weight="0.25"/>
         <TextView
             android:id="@+id/txt_ta"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
             android:layout_weight="0.25"/>
-    </TableRow>
+    </LinearLayout>
 
-    <TableRow>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
         <TextView
             android:text="TT"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
             android:layout_weight="0.25"/>
         <TextView
             android:id="@+id/txt_tt"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
             android:layout_weight="0.25"/>
         <TextView
             android:layout_width="0dp"
@@ -163,92 +167,85 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.25"/>
-    </TableRow>
+    </LinearLayout>
 
-    <TableRow android:layout_marginTop="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
         <TextView
             android:text="GX"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_weight="0.15"/>
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
+            android:layout_weight="1"/>
         <TextView
             android:id="@+id/txt_gx"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_weight="0.15"/>
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
+            android:layout_weight="1"/>
         <TextView
             android:text="GP"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_weight="0.15"/>
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
+            android:layout_weight="1"/>
         <TextView
             android:id="@+id/txt_gp"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_weight="0.15"/>
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
+            android:layout_weight="1"/>
         <TextView
             android:text="Gd"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_weight="0.15"/>
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
+            android:layout_weight="1"/>
         <TextView
             android:id="@+id/txt_gd"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_weight="0.15"/>
-    </TableRow>
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
+            android:layout_weight="1"/>
+    </LinearLayout>
 
-    <TableRow
-        android:layout_marginTop="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
         <TextView
             android:text="#Trainings"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_weight="0.5"/>
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
+            android:layout_weight="0.25"/>
         <TextView
             android:id="@+id/txt_total"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_weight="0.5"/>
-    </TableRow>
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
+            android:layout_weight="0.25"/>
+    </LinearLayout>
 
-    <TableRow
-        android:layout_marginTop="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
         <TextView
             android:text="Texniki"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="10sp"
-            android:layout_weight="0.5"/>
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
+            android:layout_weight="1"/>
         <TextView
             android:id="@+id/txt_texniki"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="10sp"
-            android:layout_weight="0.5"/>
-    </TableRow>
-
-    <TableRow>
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
+            android:layout_weight="1"/>
         <TextView
-            android:text="Drastiriotita"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="10sp"
-            android:layout_weight="0.5"/>
+            android:text="Drasti/ita"
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
+            android:layout_weight="1"/>
         <TextView
             android:id="@+id/txt_drastiriotita"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="10sp"
-            android:layout_weight="0.5"/>
-    </TableRow>
+            style="@style/DetailAttributes"
+            android:fontFamily="sans-serif-light"
+            android:layout_weight="1"/>
+        </LinearLayout>
 
-</TableLayout>
+</LinearLayout>
